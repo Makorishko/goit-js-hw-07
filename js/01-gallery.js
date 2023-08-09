@@ -5,7 +5,7 @@ const galleryContainer = document.querySelector(".gallery");
 const liItems = galleryItems.map(item => {
     const li = `<li>
     <a class="gallery__link" href=${item.original} src=${item.preview}>
-    <img class="js-item" src=${item.preview} ${item.description} data-source="${item.original}" width=330>
+    <img class="js-item" src=${item.preview} ${item.description} data-source="${item.original}" width=360>
     </a>
     </li>`;
     return li;
@@ -24,8 +24,8 @@ galleryContainer.addEventListener("click", (event) => {
     
 
 const instance = basicLightbox.create(`
-    <div class="modal">
-    <img src=${url} width=500 height=450>;
+    <div class="modal" >
+    <img src=${url} width=1200 height=800>;
     
     </div>
 `)
