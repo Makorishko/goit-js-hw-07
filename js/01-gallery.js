@@ -24,7 +24,7 @@ galleryContainer.addEventListener("click", (event) => {
     
 
 const instance = basicLightbox.create(`
-    <div class="modal" >
+    <div class="modal">
     <img src=${url} width=1200 height=800>;
     
     </div>
